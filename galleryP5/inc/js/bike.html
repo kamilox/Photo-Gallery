@@ -1,0 +1,95 @@
+<div class="bg-form">
+    <div class="left-side-text">
+        <h2>Registro de cliente</h2>
+        <p>
+        En ésta página vas a poder ingresar tu información para obtener más detalles de TSBike.		</p>
+        <p><strong>
+           <i>
+               Nos pondremos en contacto al finalizar de llenar el formulario
+           </i>
+           </strong>
+        </p> 
+    </div>
+</div>
+
+<style>
+    .bg-form{
+    	background-image: url(https://www.indima.com.ec/wp-content/uploads/2021/08/form-top.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        margin: auto;
+        min-height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        min-width: 100%;
+    }
+    .left-side-text{
+        max-width: 30%;
+        background:#000000;
+        color: #ffffff;
+        opacity: .7;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 10px 10px 0;
+        max-height: fit-content;
+    }
+    .left-side-text h2{
+    	color: #ffffff;
+        font-size: 20px;
+        margin: 5px 0;
+        padding: 0;
+    }
+    .left-side-text p{
+    	margin: 5px 0;
+        padding: 0;
+    }
+    .uk-input, .uk-select{
+    	background: transparent;
+        border: solid 1px #3a3a3a;
+        border-radius: 8px;
+    }
+    @media screen and (max-width: 768px){
+        .bg-form{
+            background-position: center;
+        }
+        .left-side-text{
+        	max-width: 100%;
+            width: 100%;
+        }
+        .left-side-text h2{
+    	color: #ffffff;
+        font-size: 16px !important;
+    	}
+        .left-side-text p{
+        	font-size: 14px !important;
+        }
+         .left-side-text{
+             max-width: 50%;
+             max-height: fit-content;
+        }
+    }
+    @media screen and (max-width: 512px){
+        .bg-form{
+            align-items: flex-start;
+            min-height: 400px;
+            background-position: right;
+            background-size: contain;
+        }
+        .left-side-text{
+        	max-width: 100%;
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px;
+        }
+    }
+</style>

@@ -1,0 +1,252 @@
+/*General from theme*/
+.container{
+	width: 100%;
+}
+.image_front_content_gallery{
+	max-height: 200px;
+	min-height: 200px;
+}
+/*Image protector*/
+.image-protected{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    background: rgb(255 255 255 / 80%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-unprotected{
+	display: none !important;
+}
+.button-protected{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    padding: 0 5em;
+    margin-top: 2em;
+}
+/*Add custom fields*/
+ul.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+li.gallery-item {
+    display: grid;
+}
+.image-container {
+    margin: 10px;
+    display: grid;
+}
+.gallery-item input,
+.gallery-item .image-container img{
+    max-width: 60%;
+    min-width: 60%;
+    margin: auto;
+}
+/*Gallery Index*/
+.container-procedures,
+.gallery-full-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    padding: 20px;
+}
+.procedures-parents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: solid 1px #e3e3e3;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0 0 20px 0;
+}
+
+.procedures-parents-image {
+    min-height: 120px;
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+.procedures-parents-image div {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.procedures-parents h2,
+.procedures-items{
+    margin: 0 15px;
+}
+
+.procedures-items .pr5ocedures-item a{
+    text-decoration: none;
+    color: #000000;
+}
+.procedures-items .procedures-item a:hover{
+    font-size: 120%;
+    transition: font-size 1s;
+}
+/*Patients by category*/
+.patient-detail {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+    border: solid 1px #e3e3e3;
+    border-radius: 10px;
+}
+h2.patient-detail-title {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 5px;
+    padding: 5px;
+}
+.patient-detail-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sensitive-images {
+    display: none;
+}
+.procedures-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: transparent;
+    text-align: center;
+}
+.procedures-title a {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    max-height: 40px;
+    border: solid 1px #3a3a3a;
+}
+.image-gallery-content{
+    position: relative;
+    margin: 5px;
+}
+.patient-detail-image-header-info-description-content {
+    position: absolute;
+    left: 0;
+    right: 5px;
+    bottom: 0;
+    margin: auto;
+    text-align: right;
+    color: #ffffff;
+}
+.patient-detail-info-logo{
+    font-size:0;
+}
+.patient-detail-buttom {
+    text-align: center;
+    margin: 5px;
+    padding: 10px 30px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 40px;
+    border: solid 1px #acacac;
+}
+/*Singular*/
+.navigator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin:30px 0;
+}
+.navigator div a {
+    border: solid 1px #333333;
+    padding: 10px 30px;
+    max-height: 40px;
+    margin: 10px;
+    background: #ffffff;
+}
+.column-gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.patient-detail-title{
+    padding: 30px 0;
+}
+.patient-detail-title h1 {
+    font-size: 30px;
+}
+.patient-detail-image-carousel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.patient-detail-image-carousel-item {
+    padding: 5px;
+    text-align: center;
+}
+.patient-detail-image-carousel-item img {
+    min-width: 20em;
+    max-width: 20em;
+    width: 20em;
+}
+.patient-detail-excerpt {
+    padding: 10px;
+    color: #333333;
+    margin: 5px;
+}
+/*Settings*/
+.patients-settings,
+.patient-detail-image-carousel-settings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gallery-slug {
+    padding: 10px;
+}
+img.patients-settings-logo {
+    max-width: 300px;
+}
+.container-settings-example {
+    padding: 10px;
+}
+.patient-detail-image-carousel-item-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: solid 1px #3e3e3e;
+    border-radius: 10px;
+}
+.patient-detail-image-carousel-item-settings img {
+    margin: 20px;
+    max-width: 50%;
+}
+.patient-detail-image-counter {
+    background: #000000;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #ffffff;
+}
+/*Patients Content*/
+.patient-detail-image-header-info-logo {
+    max-width: 20%;
+    float: right;
+    margin-bottom: 5px;
+}
+/*Media queries*/
+@media screen and (max-width: 768px) {
+    .procedures-title,
+    .gallery-full-container,
+    .patients-settings {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 5px;
+    }
+}
